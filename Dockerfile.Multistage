@@ -5,9 +5,12 @@ COPY go.sum .
 RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o /main main.go
+
+
 FROM scratch
-COPY db.csv /bin
-COPY db.json /bin
+WORKDIR /bin
+COPY db.csv .
+COPY db.json .
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=builder main /bin/main
+COPY --from=builder main ./main
 ENTRYPOINT ["/bin/main"]

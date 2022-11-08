@@ -8,7 +8,15 @@
 
 **Для запуска:**
 ```
-    docker run lindex_test db.csv
+    docker run --rm lindex_test db.csv
+        // or
+    docker run --rm lindex_test db.json
+```
+**или с помощью Makefile:**
+```
+    make run_json
+        // or
+    make run_csv
 ```
 
 **Стек технологий:**
