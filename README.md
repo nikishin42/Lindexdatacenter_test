@@ -1,9 +1,17 @@
 # Lindexdatacenter_test
 тестовое задание для Lindexdatacenter
 
+**Для сборки приложения в докере:**
+```
+    make docker_build
+```
 
+**Для запуска:**
+```
+    docker run lindex_test db.csv
+```
 
-Стек технологий
+**Стек технологий:**
 ```GoLang, docker, github```
 
 **Задача:**
