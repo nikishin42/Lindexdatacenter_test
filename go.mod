@@ -1,4 +1,4 @@
-module Lindexdatacenter_test
+module Linxdatacenter_test
 
 go 1.18
 
