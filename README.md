@@ -8,9 +8,9 @@
 
 **Для запуска:**
 ```
-    docker run --rm linx_test db.csv
+    docker run --rm linxdc_test db.csv
         // or
-    docker run --rm linx_test db.json
+    docker run --rm linxdc_test db.json
 ```
 **или с помощью Makefile:**
 ```
