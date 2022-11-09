@@ -1,5 +1,5 @@
-# Lindexdatacenter_test
-тестовое задание для Lindexdatacenter
+# Linxdatacenter_test
+тестовое задание для Linxdatacenter
 
 **Для сборки приложения в докере:**
 ```
@@ -8,9 +8,9 @@
 
 **Для запуска:**
 ```
-    docker run --rm lindex_test db.csv
+    docker run --rm linx_test db.csv
         // or
-    docker run --rm lindex_test db.json
+    docker run --rm linx_test db.json
 ```
 **или с помощью Makefile:**
 ```
